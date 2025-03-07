@@ -28,3 +28,12 @@ Homestead.json
 .env.production
 .phpactor.json
 auth.json
+
+.idea
+
+public/build
+public/css
+public/js
+
+composer.lock
+package-lock.json
