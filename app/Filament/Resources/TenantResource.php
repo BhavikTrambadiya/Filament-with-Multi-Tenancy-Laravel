@@ -37,7 +37,7 @@ class TenantResource extends Resource
                     ->label('ID'),
                 Tables\Columns\TextColumn::make('domains.domain')
                     ->label('Domains')
-                    ->url(fn(Tenant $tenant) => (request()->secure() ? 'https' : 'http') . "://" . $tenant->domains->first()?->domain . "/store", true),
+                    ->url(fn(Tenant $tenant) => (request()->secure() ? 'https' : 'http' ). "://".$tenant->domains->first()?->domain."/store", true),
             ])
             ->filters([
                 //
